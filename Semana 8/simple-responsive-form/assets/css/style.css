@@ -1,0 +1,45 @@
+body {
+  padding: 2%;
+  color: #444;
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #ed917d;
+}
+
+div {
+  display: flex;
+  /* 
+  flex-direction: row;
+  flex-wrap: wrap;
+  */
+  flex-flow: row wrap;
+}
+
+.field,
+textarea {
+  margin: 0 0.5em 1em 0;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+}
+
+.field {
+  width: 45%;
+  /*
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 40%;
+  */
+  flex: 1 0 40%;
+}
+
+textarea {
+  width: 90%;
+  flex: 1 0 90%;
+}
+
+.button {
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #e48236;
+  color: #fff;
+}
