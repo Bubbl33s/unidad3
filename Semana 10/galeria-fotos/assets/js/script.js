@@ -59,16 +59,15 @@ $(document).ready(function () {
   }
 
   // Pokemons
-  for (let i = 1; i < 16; i++) {
-    getPokemon(i);
-  }
+  getData();
 });
 
-function getPokemon(id) {
+function getData() {
+  const APIurl = "https://pvz-2-api.vercel.app/api/zombies";
   // Plantilla de ajax con jQuery
   $.ajax({
     type: "GET",
-    url: `https://pokeapi.co/api/v2/pokemon/${id}`,
+    url: APIurl,
     dataType: "json",
     async: true,
     success: function (data) {
